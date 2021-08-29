@@ -1,0 +1,17 @@
+.ButtonNavMainBox{
+  width: 60px;
+  height: 60px;
+  background: olivedrab;
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .ButtonNavBox{
+    display:flex;
+   
+
+    width:60px;
+    height: 4px;
+    background: pink;
+  }
+}
