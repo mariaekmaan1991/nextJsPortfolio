@@ -11,6 +11,7 @@
 .LayoutColorSideBox{
   background: greenyellow;
   display: flex;
+  padding: 30px;
 }
 
 .LayoutMainBox {
@@ -41,10 +42,13 @@
 }
 
 
-@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 300px) {
+  .Wrapper{
+
   .LayoutColorSideBox{
-    background-color:indianred
-    
+    background-color:indianred;
+   
   }
   .LayoutMainBox {
   
@@ -61,15 +65,18 @@
     }
     
   }
-  
+}
 }
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
+  .Wrapper{    flex-direction: row;
+
   .LayoutColorSideBox{
-    background-color:indianred
-    
+
+    background-color:indianred;
+    width: 30%;
   }
   .LayoutMainBox {
   
@@ -86,7 +93,7 @@
     }
     
   }
-  
+}
 }
 
 
