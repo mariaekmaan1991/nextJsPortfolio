@@ -1,49 +1,62 @@
+.LayoutColorSideBox{
+  width: 100%;
+  height: 10%;
+  background-color:pink;
+  
+}
 .LayoutMainBox {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  .LayoutColorOneBox {
+  height: 100%;
+  background-color:black;
+  .LayoutContinerBox {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    background-color:royalblue;
+  }
+ 
+  .LayoutColorBox {
+    display: flex;
     background-color: aqua;
     width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
+    height: 50%;
+   
   }
-  .LayoutContinerBox {
-    .LayoutColorTwoBox {
-      background-color: rgb(0, 255, 21);
-      width: 100%;
-      height: 200px;
-      display: flex;
-    }
-  }
+  
 }
+
+
 @media only screen and (min-width: 600px) {
-  .LayoutMainBox {
-    flex-direction: column;
-    .LayoutColorOneBox {
-      background-color: rgb(255, 115, 0);
-      flex-direction: column;
-      width: 40%;
-      height: 100%;
-    }
-    .LayoutContinerBox {
-      flex-direction: row;
-      display: flex;
-      .LayoutColorTwoBox {
-        background-color: rgb(170, 121, 81);
-      }
-    }
+  .LayoutColorSideBox{
+ 
+    background-color:indianred
+    
   }
+  .LayoutMainBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    background-color:black;
+    .LayoutContinerBox {
+
+      background-color:rgb(164, 225, 65);
+    }
+   
+    .LayoutColorBox {
+    
+      background-color: aqua;
+     
+     
+    }
+    
+  }
+  
 }
 
 @media only screen and (min-width: 900px) {
-  .LayoutMainBox {
-    .LayoutColorOneBox {
-    }
-    .LayoutContinerBox {
-      .LayoutColorTwoBox {
-        background-color: rgb(55, 0, 255);
-      }
-    }
-  }
+ 
 }
