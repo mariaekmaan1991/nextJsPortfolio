@@ -4,7 +4,7 @@ import styles from "../../styles/Layout.module.scss";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className={styles.Wrapper}>
       <div className={styles.LayoutColorSideBox}>
         <NavBar />
       </div>
@@ -13,7 +13,6 @@ export default function Layout({ children }) {
 
         <div className={styles.LayoutColorBox}></div>
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }
