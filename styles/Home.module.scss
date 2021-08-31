@@ -11,20 +11,72 @@
 }
 
 .HomeBoxImage {
-  width: 250px;
-  height: 350px;
+  position: fixed;
+  width: 350px;
+  height: 400px;
+  z-Index: 2;
+  justify-Content: center;
   display: flex;
+  top: 20%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 400px) {
   .HomeColorFrame {
-    border: 5px solid rgb(157, 255, 0);
-    width: 75%;
+    border: 5px solid rgb(126, 201, 1);
+    top: 25%;
+    width: 65%;
     height: 50%;
-    top:24%;
+
+  }
+  .HomeHeadlineBox {
+    width: 250px;
+    display: flex;
+    height: 70px;
+    background-color: rgb(33, 30, 210);
+    padding: 16px;
+    top: 49%;
+    left: 30%;
+  }
+
+  .HomeBoxImage {
+    width: 450px;
+    height: 500px;
    
+  }
+  
+}
+
+@media only screen and (min-width: 900px) {
+  .HomeColorFrame {
+   border: 5px solid red;
    
-   
+  // height: 50%;
+  
+ 
+   position: fixed;
+  }
+  .HomeBoxImage {
+    left:20%
+ 
+  }
+  .HomeHeadlineBox{
     
   }
+
+}
+
+@media only screen and (min-width: 1500px) {
+  .HomeColorFrame {
+   border: 5px solid rgb(33, 30, 210);
+
+ 
+  }
+  .HomeBoxImage {
+
+ 
+  }
+  .HomeHeadlineBox{
+    
+  }
+
 }

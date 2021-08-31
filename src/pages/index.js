@@ -2,19 +2,12 @@ import Image from "next/image";
 import styles from "../../styles/Home.module.scss";
 
 const Home = () => {
-  const imageBox = {
-    position: "fixed",
-    width: "350px",
-    height: "400px",
-    zIndex: "2",
-    justifyContent: "center",
-    display: "flex",
-    top: "20%"
-  };
   return (
     <>
       <div className={styles.HomeColorFrame}></div>
-      <div style={imageBox}>
+      <div className={styles.HomeHeadlineBox}>Välkommen till mitt profolio</div>
+      {/* <div style={imageBox} className={styles.HomeColorFrame}>*/}
+      <div className={styles.HomeBoxImage}>
         <Image
           src="/behrouz-sasani-1B22UBPK1Pw-unsplash.jpg"
           alt=""
