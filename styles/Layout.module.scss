@@ -1,101 +1,75 @@
-.Wrapper{
+.Wrapper {
   background: blue;
   width: 100%;
   height: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  position:fixed;
+  position: fixed;
   display: flex;
   flex-direction: column;
-.LayoutColorSideBox{
-  background: greenyellow;
-  display: flex;
-  padding: 30px;
-}
-
-.LayoutMainBox {
-  background: green;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  .LayoutContinerBox {
+  .LayoutColorSideBox {
+    background: greenyellow;
     display: flex;
-    background:indianred;
+    padding: 30px;
+  }
+
+  .LayoutMainBox {
+    background: green;
     width: 100%;
     height: 100%;
-    justify-content: center;
-  
-  }
- 
-  .LayoutColorBox {
     display: flex;
-    background-color: thistle;
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
+    .LayoutContinerBox {
+      display: flex;
+      background: indianred;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+    }
 
-   
+    .LayoutColorBox {
+      display: flex;
+      background-color: thistle;
+      width: 100%;
+      height: 100%;
+    }
   }
-  
 }
-}
-
-
 
 @media only screen and (min-width: 300px) {
-  .Wrapper{
-
-  .LayoutColorSideBox{
-    background-color:indianred;
-   
-  }
-  .LayoutMainBox {
-  
-    .LayoutContinerBox {
-
-      background-color:rgb(164, 225, 65);
+  .Wrapper {
+    .LayoutColorSideBox {
+      background-color: indianred;
     }
-   
-    .LayoutColorBox {
-    
-      background-color: aqua;
-     
-     
+    .LayoutMainBox {
+      .LayoutContinerBox {
+        background-color: rgb(164, 225, 65);
+      }
+
+      .LayoutColorBox {
+        background-color: aqua;
+      }
     }
-    
   }
 }
-}
-
-
 
 @media only screen and (min-width: 900px) {
-  .Wrapper{    flex-direction: row;
+  .Wrapper {
+    flex-direction: row;
 
-  .LayoutColorSideBox{
-
-    background-color:indianred;
-    width: 30%;
-  }
-  .LayoutMainBox {
-  
-    .LayoutContinerBox {
-
-      background-color:rgb(164, 225, 65);
+    .LayoutColorSideBox {
+      background-color: indianred;
+      width: 20%;
     }
-   
-    .LayoutColorBox {
-    
-      background-color: aqua;
-     
-     
+    .LayoutMainBox {
+      .LayoutContinerBox {
+        background-color: rgb(164, 225, 65);
+      }
+
+      .LayoutColorBox {
+        background-color: aqua;
+      }
     }
-    
   }
 }
-}
-
-
-
-

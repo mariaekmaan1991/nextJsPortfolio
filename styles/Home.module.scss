@@ -1,93 +1,88 @@
 .HomeColorFrame {
   border: 5px solid rgb(255, 0, 221);
-  width: 80%;
-  height: 65%;
-  max-width: 80%;
+  width: 70%;
+  height: 60%;
+  max-width: 70%;
   display: flex;
   z-index: 10;
-  position:fixed;
-  top:15%;
+  position: fixed;
+  top: 20%;
   justify-content: center;
- //justify-items: center;
+  //justify-items: center;
 }
 
 .HomeBoxImage {
   position: fixed;
-  width: 350px;
-  height: 400px;
-  z-Index: 2;
-  justify-Content: center;
+  width: 80%;
+  height: 50%;
+  z-index: 2;
+  justify-content: center;
   display: flex;
-  top: 20%;
+  top: 25%;
 }
 
 @media only screen and (min-width: 400px) {
   .HomeColorFrame {
     border: 5px solid rgb(126, 201, 1);
-  
-    top: 14%;
-    
-    height: 80%;
-
+    top: 23%;
+    height: 75%;
+    width: 60%;
   }
   .HomeHeadlineBox {
     width: 250px;
-    position:fixed;
+    position: fixed;
     display: flex;
     height: 70px;
     background-color: rgb(33, 30, 210);
     padding: 16px;
     top: 35%;
     z-index: 10;
-    right:10%;
-    
+    right: 10%;
   }
 
   .HomeBoxImage {
-    width: 450px;
-    height: 500px;
-   
+    top: 28%;
+    width: 80%;
+    height: 65%;
   }
-  
+}
+
+@media only screen and (min-width: 500px) {
+  .HomeColorFrame {
+    border: 5px solid rgb(14, 12, 12);
+    width: 75%;
+    height: 60%;
+    top: 30%;
+    max-width: 90%;
+    // height: 50%;
+
+    position: fixed;
+  }
+  .HomeBoxImage {
+    top: 25%;
+    left: 17%;
+    width: 45%;
+
+    height: 70%;
+  }
+  .HomeHeadlineBox {
+  }
 }
 
 @media only screen and (min-width: 900px) {
   .HomeColorFrame {
-   border: 5px solid rgb(14, 12, 12);
-   width: 50%;
-   height: 50%;
-   max-width: 50%;
-  // height: 50%;
-    top: 25%;
- 
-   position: fixed;
+    top: 20%;
+    border: 5px solid rgb(210, 30, 72);
+    width: 55%;
+    height: 65%;
   }
   .HomeBoxImage {
-    left:35%
- 
+    top: 13%;
+    left: 35%;
+    width: 30%;
+    height: 80%;
+    max-width: 35%;
   }
-  .HomeHeadlineBox{
-    
+  .HomeHeadlineBox {
   }
-
-}
-
-@media only screen and (min-width: 1500px) {
-  .HomeColorFrame {
-   border: 5px solid rgb(33, 30, 210);
-
-   width: 50%;
-   height: 50%;
-   max-width: 50%;
-  // height: 50%;
-    top: 25%;
-  }
-  .HomeBoxImage {
-
- 
-  }
-  .HomeHeadlineBox{
-    
-  }
-
 }
