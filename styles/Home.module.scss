@@ -1,20 +1,21 @@
+
 .HomeColorFrame {
   border: 5px solid rgb(255, 0, 221);
-  width: 70%;
-  height: 58%;
+  width: 180px;
+  height: 50%;
   max-width: 70%;
   display: flex;
   z-index: 10;
   position: fixed;
-  top: 27%;
+  top: 30%;
   justify-content: center;
   //justify-items: center;
 }
 
 .HomeBoxImage {
-  top: 30%;
-  width: 200px;
-  height: 50%;
+  top: 35%;
+  width: 160px;
+  height: 40%;
   z-index: 2;
   justify-content: center;
   display: flex;
@@ -24,12 +25,13 @@
 @media only screen and (min-width: 300px) {
   .HomeColorFrame {
     border: 5px solid rgb(126, 201, 1);
-    width: 40%;
-    height: 58%;
-    max-width: 70%;
+    width: 60%;
+    height: 50%;
+    top: 35%;
+    max-width: 60%;
   }
   .HomeHeadlineBox {
-    width: 250px;
+    width: 240px;
     position: fixed;
     display: flex;
     height: 70px;
@@ -43,7 +45,7 @@
   .HomeBoxImage {
     top: 30%;
     width: 250px;
-    height: 50%;
+    height: 60%;
   }
 }
 
@@ -52,24 +54,24 @@
     top: 20%;
     border: 5px solid rgb(208, 161, 172);
     width: 50%;
-    height: 60%;
-    max-width: 50%;
+    height: 65%;
+    min-width: 60%;
     position: fixed;
   }
   .HomeHeadlineBox {
     background-color: rgb(210, 174, 30);
   }
   .HomeBoxImage {
-    top: 15%;
-    width: 40%;
-    height: 70%;
-    max-width: 40%;
+    top: 10%;
+    width: 350px;
+    height: 80%;
+    left: 35%;
   }
   .HomeHeadlineBox {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1000px) {
   .HomeColorFrame {
     top: 20%;
     border: 5px solid rgb(210, 30, 72);
@@ -78,10 +80,11 @@
     max-width: 50%;
   }
   .HomeBoxImage {
-    width: 30%;
-    top: 10%;
+    width: 350px;
     height: 80%;
-    max-width: 30%;
+    top: 10%;
+    left: 35%;
+   
   }
   .HomeHeadlineBox {
   }
