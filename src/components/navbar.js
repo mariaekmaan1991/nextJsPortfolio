@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import HamburgerMenu from "./hamburgerMenu";
+import styles from "../../styles/NavBar.module.scss";
 
 const useOutsideClick = (ref, callback) => {
   function handleClick(e) {
@@ -29,28 +30,30 @@ export default function NavBar() {
     <>
       <HamburgerMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
       {menuOpen && (
-        <nav ref={ref}>
-          <div>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </div>
-          <div>
-            <Link href="/cv">
-              <a>cv</a>
-            </Link>
-          </div>
-          <div>
-            <Link href="/work">
-              <a>work</a>
-            </Link>
-          </div>
-          <div>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </div>
-        </nav>
+        <div className={styles.BackgroundMenu}>
+          <nav ref={ref} className={styles.NavBarMainBox}>
+            <div className={styles.NavBarLink}>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </div>
+            <div>
+              <Link href="/cv">
+                <a>cv</a>
+              </Link>
+            </div>
+            <div>
+              <Link href="/work">
+                <a>work</a>
+              </Link>
+            </div>
+            <div>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </div>
+          </nav>
+        </div>
       )}
     </>
   );
