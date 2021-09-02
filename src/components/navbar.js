@@ -31,24 +31,24 @@ export default function NavBar() {
       <HamburgerMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
       {menuOpen && (
         <div className={styles.BackgroundNav}>
-          <HamburgerMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
           <nav ref={ref} className={styles.NavBarMainBox}>
+            <HamburgerMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
             <div className={styles.NavBarLink}>
               <Link href="/about">
                 <a>About</a>
               </Link>
             </div>
-            <div>
+            <div className={styles.NavBarLink}>
               <Link href="/cv">
                 <a>cv</a>
               </Link>
             </div>
-            <div>
+            <div className={styles.NavBarLink}>
               <Link href="/work">
                 <a>work</a>
               </Link>
             </div>
-            <div>
+            <div className={styles.NavBarLink}>
               <Link href="/">
                 <a>Home</a>
               </Link>
